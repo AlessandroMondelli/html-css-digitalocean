@@ -47,20 +47,12 @@
     top: 10px;
 }
 
-#my-header-bottom .container-fluid,.row,.col-lg-10 {
-    height: 65px;
-}
-
-#my-header-bottom .row {
-    line-height: 65px;
-}
-
 #my-header-bottom .my-logo {
     display: inline;
 }
 
 #my-header-bottom img {
-    width: 40%;
+    width: 30%;
     vertical-align: sub;
 }
 
@@ -247,7 +239,81 @@
     margin-left: 5px;
 }
 
+/*** FINE BUSINESS ***/
+
+/*** INIZIO DEPLOY ***/
+
+#deploy {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#deploy .my-sec-title h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#deploy .my-sec-title p {
+    font-size: 20px;
+    color: rgba(3,27,78,.7);
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+#deploy ul {
+    line-height: 3;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+#deploy li {
+    padding-left: 15px;
+    border-left: 2px solid rgb(229, 232, 237);
+}
+
+#deploy ul li:first-child {
+    border-left: 2px solid rgb(0, 105, 255);
+    font-weight: bold;
+}
+
+#deploy ul li:first-child a {
+    color: #031b4e;
+}
+
+#deploy a {
+    text-decoration: none;
+    color: rgba(3,27,78,.7);
+}
+
+#deploy a:hover {
+    color: #031b4e;
+}
+
+#deploy h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#deploy #dep-info p {
+    font-size: 16px;
+    color: rgba(3,27,78,.5);
+    margin-bottom: 20px;
+}
+
+#deploy i {
+    color: #0069FF;
+}
+
+/*** FINE DEPLOY ***/
+
 /*** MEDIA QUERY ***/
+
+@media screen and (min-width:320px) and (max-width:479px) {
+    .col-xxs-12 {
+        width: 100%;
+    }
+}
 
 @media screen and (min-width:768px) {
     #jumbo #jumbo-back {
@@ -268,16 +334,21 @@
     #my-header-bottom {
         position: static;
         top: 10px;
+        box-shadow: 0 4px 2px -2px rgba(3,27,78,.1);
+        height: 70px;
     }
 
+    #my-header-bottom .row {
+        line-height: 50px;
+    }
 
     #my-header-bottom img {
-        width: 15%;
-        vertical-align: sub;
+        width: 10%;
+        vertical-align: middle;
     }
 
     #jumbo {
-        padding-top: 116px;
+        padding-top: 100px;
     }
 
     #jumbo #jumbo-back {
