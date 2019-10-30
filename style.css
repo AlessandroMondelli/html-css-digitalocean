@@ -7,6 +7,17 @@
     font-weight: bold;
 }
 
+.my-sec-title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #031b4e;
+}
+
+.my-sec-title p {
+    font-size: 20px;
+    color: rgba(3,27,78,.7);
+}
+
 /*** HEADER ***/
 
 /*** HEADER TOP ***/
@@ -248,14 +259,7 @@
     padding-bottom: 40px;
 }
 
-#deploy .my-sec-title h2 {
-    font-size: 36px;
-    font-weight: bold;
-}
-
 #deploy .my-sec-title p {
-    font-size: 20px;
-    color: rgba(3,27,78,.7);
     max-width: 90%;
     margin: 0 auto;
     margin-bottom: 35px;
@@ -307,11 +311,76 @@
 
 /*** FINE DEPLOY ***/
 
+/*** INIZIO DES-DEV ***/
+
+#des-dev {
+    background-color: #F3F5F9;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#des-dev .my-sec-title p {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+#des-dev .mid-slider img {
+    margin: 40px auto;
+    width: 65%;
+}
+
+/** NON FUNZIONANTI ***
+#des-dev .mid-slider img::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f053";
+    position: absolute;
+    left: -10%;
+    top: 50%;
+}
+
+#des-dev .mid-slider img::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
+    position: absolute;
+    right: -10%;
+}
+***                 ***/
+
+#des-dev .mid-slider p {
+    font-size: 16px;
+    color: rgba(3,27,78,.7);
+    max-width: 55%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+#des-dev .mid-slider i {
+    font-size: 10px;
+    margin-right: 5px;
+    color: #0069ff;
+    border: 3px;
+}
+
+#des-dev .mid-slider a:not(:first-child) i:hover {
+    background-color: rgba(0,105,255,.2);
+    border-radius: 5px;
+}
+
+
+/*** FINE DES-DEV ***/
+
 /*** MEDIA QUERY ***/
 
 @media screen and (min-width:320px) and (max-width:479px) {
     .col-xxs-12 {
         width: 100%;
+    }
+
+    #des-dev .mid-slider p {
+        max-width: 100%;
+        margin: 10px auto;
     }
 }
 
