@@ -43,7 +43,8 @@
 /*** HEADER BOTTOM ***/
 
 #my-header-bottom {
-    background-color: transparent;
+    position: absolute;
+    top: 10px;
 }
 
 #my-header-bottom .container-fluid,.row,.col-lg-10 {
@@ -89,14 +90,19 @@
     color: white;
 }
 
+#my-header-bottom .my-hamburger i {
+    color: #d4d8dc;
+    opacity: 0.4;
+    font-size: 25px;
+}
+
 /*** FINE HEADER BOTTOM ***/
 
 /*** JUMBO ***/
 
 #jumbo #jumbo-back {
-    background-image: url("https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #0049FF;
+    padding-top: 50px;
 }
 
 #jumbo #sale {
@@ -208,12 +214,27 @@
 
 /*** MEDIA QUERY ***/
 
+@media screen and (min-width:768px) {
+    #jumbo #jumbo-back {
+        background-image: url("https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
 @media screen and (min-width:992px) {
     header {
         position: fixed;
         z-index: 10;
         background-color: white;
     }
+
+    #my-header-bottom {
+        position: static;
+        top: 10px;
+    }
+
 
     #my-header-bottom img {
         width: 15%;
@@ -222,5 +243,9 @@
 
     #jumbo {
         padding-top: 116px;
+    }
+
+    #jumbo #jumbo-back {
+         padding-top: 0px;
     }
 }
