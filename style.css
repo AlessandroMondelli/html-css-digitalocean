@@ -212,6 +212,41 @@
     color: #0069ff;
 }
 
+/*** FINE JUMBO ***/
+
+/***INIZIO BUSINESS ***/
+
+#business {
+    background-color: #F3F5F9;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#business h3,a {
+    font-weight: bold;
+}
+
+#business h3 {
+    font-size: 14px;
+    color: #031b4e;
+    opacity: 0.4;
+}
+
+#business img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#business a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #0069ff;
+}
+
+#business i {
+    margin-left: 5px;
+}
+
 /*** MEDIA QUERY ***/
 
 @media screen and (min-width:768px) {
@@ -247,5 +282,9 @@
 
     #jumbo #jumbo-back {
          padding-top: 0px;
+    }
+
+    #business img {
+        width: 100%;
     }
 }
