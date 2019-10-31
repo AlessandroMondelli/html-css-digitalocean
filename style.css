@@ -39,7 +39,6 @@
     border-radius: 5px;
 }
 
-
 /*** HEADER ***/
 
 /*** HEADER TOP ***/
@@ -555,6 +554,37 @@
 }
 
 /***FINE DEV-TEAMS ***/
+
+/*** INIZIO GET-START ***/
+
+    #get-start {
+        background-image: url("https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    #get-start h3 {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #get-start .my-button {
+        background-color: white;
+        color: #0069ff;
+        margin-top: 15px;
+        padding: 10px 25px;
+    }
+
+    #get-start .my-button:hover {
+        opacity: 0.8;
+    }
+
+
+/***FINE GET START ***/
 
 /*** MEDIA QUERY ***/
 
