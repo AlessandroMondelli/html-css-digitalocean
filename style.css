@@ -76,7 +76,7 @@
 
 #my-header-bottom {
     position: absolute;
-    top: 10px;
+    top: 20px;
 }
 
 #my-header-bottom .my-logo {
@@ -361,26 +361,8 @@
 
 #des-dev .mid-slider img {
     width: 65%;
+    position: relative;
 }
-
-/** NON FUNZIONANTI ***
-#des-dev .mid-slider img::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f053";
-    position: absolute;
-    left: -10%;
-    top: 50%;
-}
-
-#des-dev .mid-slider img::after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f054";
-    position: absolute;
-    right: -10%;
-}
-***                 ***/
 
 /*** FINE DES-DEV ***/
 
@@ -686,6 +668,33 @@ hr {
         background-color: white;
     }
 
+    .mid-slider::before {
+       font-family: "Font Awesome 5 Free";
+       font-weight: 900;
+       content: "\f053";
+       position: absolute;
+       left: 12%;
+       top: 50%;
+       font-size: 30px;
+       color: rgba(0,0,0,0.3)
+   }
+
+    .mid-slider::after {
+       font-family: "Font Awesome 5 Free";
+       font-weight: 900;
+       content: "\f054";
+       position: absolute;
+       right: 12%;
+       top: 50%;
+       font-size: 30px;
+       color: #031b4e;
+   }
+
+    .mid-slider::after:hover {
+       cursor: pointer;
+       color: #0069FF;
+   }
+
     #my-header-bottom {
         position: static;
         top: 10px;
@@ -713,6 +722,7 @@ hr {
     #business img {
         width: 100%;
     }
+
 
     #built-dev p {
         max-width: 90%;
