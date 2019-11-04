@@ -76,7 +76,9 @@
 
 #my-header-bottom {
     position: absolute;
-    top: 20px;
+    left: 0;
+    right: 0;
+    top: 25px;
 }
 
 #my-header-bottom .my-logo {
@@ -265,8 +267,13 @@
 }
 
 #business img {
-    width: 50%;
+    display: inline-block;
+    width: 40%;
     margin: 0 auto;
+}
+
+#business img:not(:nth-child(2n+1)) {
+    margin-right: 30px;
 }
 
 #business a {
@@ -659,6 +666,16 @@ hr {
         background-size: cover;
         background-position: center;
     }
+
+    #business img {
+        width: 10%;
+        margin-right: 45px;
+    }
+
+    #business img:not(:nth-child(2n+1)) {
+        margin-right: 45px;
+    }
+
 }
 
 @media screen and (min-width:992px) {
@@ -690,7 +707,7 @@ hr {
        color: #031b4e;
    }
 
-    .mid-slider::after:hover {
+    .mid-slider:hover::after {
        cursor: pointer;
        color: #0069FF;
    }
@@ -720,9 +737,9 @@ hr {
     }
 
     #business img {
-        width: 100%;
+        width: 10%;
+        margin-right: 45px;
     }
-
 
     #built-dev p {
         max-width: 90%;
