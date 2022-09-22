@@ -266,14 +266,14 @@
     opacity: 0.4;
 }
 
-#business img {
+#business .business-logos .img-responsive {
     display: inline-block;
-    width: 40%;
-    margin: 0 auto;
+    width: 30%;
+    margin: 20px auto;
 }
 
-#business img:not(:nth-child(2n+1)) {
-    margin-right: 30px;
+#business .business-logos .img-responsive:not(:nth-child(2n)) {
+    margin-right: 35px;
 }
 
 #business a {
@@ -529,6 +529,7 @@
 #dev-teams #slider-cont #my-text-box {
     max-width: 90%;
     font-size: 24px;
+    margin-top: 20px;
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
@@ -667,12 +668,12 @@ hr {
         background-position: center;
     }
 
-    #business img {
-        width: 10%;
+    #business .business-logos .img-responsive {
         margin-right: 45px;
+        width: 10%;
     }
 
-    #business img:not(:nth-child(2n+1)) {
+    #business .business-logos .img-responsive:not(:nth-child(2n+1)) {
         margin-right: 45px;
     }
 
@@ -736,9 +737,9 @@ hr {
          padding-top: 0px;
     }
 
-    #business img {
-        width: 10%;
+    #business .business-logos .img-responsive {
         margin-right: 45px;
+        width: 5%;
     }
 
     #built-dev p {
